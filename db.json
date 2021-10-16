@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "img": "",
+      "name": "Amit Jain",
+      "post": "Co-Founder",
+      "company": "Interface Sense Consulting LLP",
+      "location": "Mumbai",
+      "email":"aaaa@gmail.com",
+      "sector": ["FMCG","Shipping"],
+      "sub-sector": ["Stainless Steel","Transport"],
+      "sub-sub-sector": ["Manufacturing","Trade"],
+      "interest": ["Indian Economy","world Economy","Politics","National Security","Buisness Performance","Markets","Sector Updates"]
+    },
+    {
+      "id": 2,
+      "img": "",
+      "name": "Amit Jain",
+      "post": "Co-Founder",
+      "company": "Interface Sense Consulting LLP",
+      "location": "Mumbai",
+      "email":"aaaa@gmail.com",
+      "sector": ["FMCG","Shipping"],
+      "sub-sector": ["Stainless Steel","Transport"],
+      "sub-sub-sector": ["Manufacturing","Trade"],
+      "interest": ["Indian Economy","world Economy","Politics","National Security","Buisness Performance","Markets","Sector Updates"]
+    },
+    {
+      "id": 3,
+      "img": "",
+      "name": "Amit Jain",
+      "post": "Co-Founder",
+      "company": "Interface Sense Consulting LLP",
+      "location": "Mumbai",
+      "email":"aaaa@gmail.com",
+      "sector": ["FMCG","Shipping"],
+      "sub-sector": ["Stainless Steel","Transport"],
+      "sub-sub-sector": ["Manufacturing","Trade"],
+      "interest": ["Indian Economy","world Economy","Politics","National Security","Buisness Performance","Markets","Sector Updates"]
+    },
+    {
+      "id": 4,
+      "img": "",
+      "name": "Amit Jain",
+      "post": "Co-Founder",
+      "company": "Interface Sense Consulting LLP",
+      "location": "Mumbai",
+      "email":"aaaa@gmail.com",
+      "sector": ["FMCG","Shipping"],
+      "sub-sector": ["Stainless Steel","Transport"],
+      "sub-sub-sector": ["Manufacturing","Trade"],
+      "interest": ["Indian Economy","world Economy","Politics","National Security","Buisness Performance","Markets","Sector Updates"]
+    },
+    {
+      "id": 5,
+      "img": "",
+      "name": "Amit Jain",
+      "post": "Co-Founder",
+      "company": "Interface Sense Consulting LLP",
+      "location": "Mumbai",
+      "email":"aaaa@gmail.com",
+      "sector": ["FMCG","Shipping"],
+      "sub-sector": ["Stainless Steel","Transport"],
+      "sub-sub-sector": ["Manufacturing","Trade"],
+      "interest": ["Indian Economy","world Economy","Politics","National Security","Buisness Performance","Markets","Sector Updates"]
+    },
+    {
+      "id": 6,
+      "img": "",
+      "name": "Amit Jain",
+      "post": "Co-Founder",
+      "company": "Interface Sense Consulting LLP",
+      "location": "Mumbai",
+      "email":"aaaa@gmail.com",
+      "sector": ["FMCG","Shipping"],
+      "sub-sector": ["Stainless Steel","Transport"],
+      "sub-sub-sector": ["Manufacturing","Trade"],
+      "interest": ["Indian Economy","world Economy","Politics","National Security","Buisness Performance","Markets","Sector Updates"]
+    }
+  ]
+}

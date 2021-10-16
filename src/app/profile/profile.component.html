@@ -1,0 +1,21 @@
+<div class = "container text-center"> <h3>Members profile</h3></div><hr>
+<div class = "row" *ngFor="let item of data">
+    <div class = "card" >
+        <img src = "..." class = "card-image-top">
+        <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <h4 class="card-title">{{item.post}}</h4>
+            <h2 class="card-title">{{item.company}}</h2>
+            <h2 class="card-title">Mumbai</h2>
+        </div>
+    </div>
+<!-- <h3>{{item.email}}</h3><hr>
+<h2>Sector</h2>
+<div class="box">{{item.sector}}</div>
+<h2> Sub-Sector</h2>
+<div class="box">{{item.sub-sector}}</div>
+<h2> Sub-Sub-Sector</h2>
+<div class="box">{{item.sub-sub-sector}}</div><hr>
+<h2>Area Of Interest</h2>
+<div class="box">{{item.interest}}</div> -->
+</div>
