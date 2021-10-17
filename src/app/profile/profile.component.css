@@ -1,5 +1,10 @@
 .box{
-    padding: 20px;
+    padding: 6px;
     border: 1px solid black;
     margin: 10px;
+    max-width: fit-content;
+    border-radius: 5px;
+}
+.abc{
+    justify-content: center;
 }

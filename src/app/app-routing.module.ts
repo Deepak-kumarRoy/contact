@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FilterComponent } from './filter/filter.component';
+import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SearchComponent } from './search/search.component';
@@ -9,7 +11,7 @@ const routes: Routes = [
     path: '',
     component: NavbarComponent,children: [
   {
-    path: 'profile',
+    path: 'profile/:id',
     component: ProfileComponent
   },
   {
@@ -17,9 +19,12 @@ const routes: Routes = [
     component: SearchComponent
   },
   {
-    path: '**',
-    redirectTo: 'profile',
-    pathMatch: 'full'
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path:'filter',
+    component: FilterComponent
   }
 ]}
 ];

@@ -1,21 +1,19 @@
-<div class = "container text-center"> <h3>Members profile</h3></div><hr>
-<div class = "row" *ngFor="let item of data">
-    <div class = "card" >
-        <img src = "..." class = "card-image-top">
+<div class = "container text-center"> <h3>Members profile</h3><hr></div>
+<div class = "container" *ngFor="let item of prof">
+<div class="text-center"><img src="{{item.img}}" class="img-fluid rounded-start" alt="..."></div>
         <div class="card-body">
-            <h5 class="card-title">{{item.name}}</h5>
-            <h4 class="card-title">{{item.post}}</h4>
-            <h2 class="card-title">{{item.company}}</h2>
-            <h2 class="card-title">Mumbai</h2>
+            <h2 class="card-title">{{item.name}}</h2>
+            <h5 class="card-title">{{item.post}}</h5>
+            <h6 class="card-title">{{item.company}}</h6>
+            <h6 class="card-title">{{item.location}}</h6>
         </div>
-    </div>
-<!-- <h3>{{item.email}}</h3><hr>
-<h2>Sector</h2>
-<div class="box">{{item.sector}}</div>
-<h2> Sub-Sector</h2>
-<div class="box">{{item.sub-sector}}</div>
-<h2> Sub-Sub-Sector</h2>
-<div class="box">{{item.sub-sub-sector}}</div><hr>
-<h2>Area Of Interest</h2>
-<div class="box">{{item.interest}}</div> -->
+<h5>&nbsp;&nbsp;&nbsp;{{item.email}}</h5><hr>
+<h4>Sector:</h4>
+<div class="row"><div class="col box" *ngFor="let items of item.sector">{{items}}</div></div>
+<h4> Sub-Sector:</h4>
+<div class="row"><div class="col box" *ngFor="let items of item.sub_sector">{{items}}</div></div>
+<h4> Sub-Sub-Sector:</h4>
+<div class="row"><div class="col box" *ngFor="let items of item.sub_sub_sector">{{items}}</div></div><hr>
+<h4>Area Of Interest:</h4>
+<div class="row"><div class="col box" *ngFor="let items of item.interest">{{items}}</div></div>
 </div>
