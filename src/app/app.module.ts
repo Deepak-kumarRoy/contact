@@ -10,7 +10,8 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { FilterComponent } from './filter/filter.component';
 import { Ng2SearchPipeModule} from 'ng2-search-filter';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { FilterPipe } from './filter.pipe'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {FormsModule} from '@angular/forms'
     ProfileComponent,
     SearchComponent,
     HomeComponent,
-    FilterComponent
+    FilterComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

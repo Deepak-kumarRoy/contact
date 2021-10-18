@@ -3,5 +3,10 @@
     height: 100px;
 }
 .card-body{
-    margin-left: -280px;
+    margin-left: -180px;
+}
+
+.abc{
+    margin-left: 150px;
+    margin-right: 150px;
 }

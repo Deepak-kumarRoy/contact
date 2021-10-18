@@ -1,17 +1,21 @@
-<div class="container">
+<div class="container my-3">
 <form class="d-flex">
-    <input class="form-control me-2" type="search" placeholder="Search" [(ngModel)]="term">
+  <a routerLink="/home"><i class="bi bi-arrow-left-circle-fill"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+      <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+    </svg></a>&nbsp;&nbsp;
+    <input class="form-control me-2" type="search" placeholder="Search" [(ngModel)]="searchText">
     <button class="btn btn-outline-success" type="submit">Search</button>
   </form>
 </div>
 
 
 <div class=" container mt-3" >
-    <div class="row" *ngFor="let item of list | filter:term">
-      <div class="col-md-4">
+    <div class="row" *ngFor="let item of list | filter:searchText">
+      <div class="col">
         <img src="{{item.img}}" class="img-fluid rounded-start" alt="...">
       </div>
-      <div class="col-md-8">
+      <div class="col">
         <div class="card-body">
           <h5 class="card-title"><a routerLink="/profile/{{item.id}}">{{item.name}}</a></h5>
           <p class="card-text">{{item.post}}</p>{{item.company}}

@@ -1,10 +1,30 @@
+<div class = "container my-3 ">
+  <div class="d-flex ">
+  <a routerLink="/home"><i class="bi bi-arrow-left-circle-fill"></i>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+  </svg></a>&nbsp;&nbsp;&nbsp;
 
-<div class=" container" >
+  <div><h3 class="text-center abc">Members Directory</h3></div>
+
+  <a routerLink="/search"><i class="bi bi-search"></i>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+  </svg></a>&nbsp;&nbsp;&nbsp;
+
+  <a routerLink="/filter"><i class="bi bi-filter-circle-fill"></i>
+   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-filter-circle-fill" viewBox="0 0 16 16">
+   <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM3.5 5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1zM5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+  </svg></a>
+  </div>  
+  </div><hr>
+
+<div class=" container col-md-12" >
     <div class="row" *ngFor="let item of list">
-      <div class="col-md-4">
+      <div class="col">
         <img src="{{item.img}}" class="img-fluid rounded-start" alt="...">
       </div>
-      <div class="col-md-8">
+      <div class="col">
         <div class="card-body">
           <h5 class="card-title"><a routerLink="/profile/{{item.id}}">{{item.name}}</a></h5>
           <p class="card-text">{{item.post}}</p>{{item.company}}

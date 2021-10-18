@@ -8,13 +8,14 @@ import { UsersService } from '../users.service';
 })
 export class SearchComponent implements OnInit {
 list:any;
-term:any;
+searchText:any;
   constructor(private user:UsersService) { }
 
   ngOnInit(): void {
     this.user.getList().subscribe(res =>{
       this.list=res;
     })
+  
   }
 
 }
