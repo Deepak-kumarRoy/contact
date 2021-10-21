@@ -8,7 +8,8 @@ import { UsersService } from '../users.service';
 })
 export class SearchComponent implements OnInit {
 list:any;
-searchText:any;
+searchTerm:any;
+
   constructor(private user:UsersService) { }
 
   ngOnInit(): void {
@@ -17,5 +18,6 @@ searchText:any;
     })
   
   }
+  
 
 }
