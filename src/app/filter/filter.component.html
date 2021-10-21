@@ -8,11 +8,11 @@
           <div class="text-center abc"><h3>Filter</h3></div>
 </div><hr>
 <h5>Filter By Forum:</h5><hr>
-<button class="btn btn-outline-success my-3" type="submit" >CEO</button>&nbsp;&nbsp;
-<h5 class="card-title box" *ngFor="let item of list"><a routerLink="/profile/{{item.id}}">{{item.name}}</a></h5>
-<button class="btn btn-outline-success my-3" type="submit">CTO</button>&nbsp;&nbsp;
-<button class="btn btn-outline-success my-3" type="submit">CFO</button>
-<h5>Filter By City:</h5><hr>
+<div class="col-md-4">
+<input type="text" class="form-control" placeholder="Enter Forum..." [(ngModel)]="searchpost">
+<h5 class="card-title box" *ngFor="let item of list | postfilter : searchpost"><a routerLink="/profile/{{item.id}}">{{item.name}}</a></h5>
+</div>
+<h5 class="mt-5">Filter By City:</h5><hr>
 <div class="col-md-4">
   <input type="text" class="form-control" placeholder="Enter City Name..." [(ngModel)]="search">
     <h5 class="card-title box" *ngFor="let item of list | cityfilter: search"><a routerLink="/profile/{{item.id}}">{{item.name}}</a></h5>

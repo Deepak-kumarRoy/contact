@@ -12,7 +12,8 @@ import { FilterComponent } from './filter/filter.component';
 import { Ng2SearchPipeModule} from 'ng2-search-filter';
 import {FormsModule} from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
-import { CityfilterPipe } from './cityfilter.pipe'
+import { CityfilterPipe } from './cityfilter.pipe';
+import { PostfilterPipe } from './postfilter.pipe'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CityfilterPipe } from './cityfilter.pipe'
     HomeComponent,
     FilterComponent,
     FilterPipe,
-    CityfilterPipe
+    CityfilterPipe,
+    PostfilterPipe
   ],
   imports: [
     BrowserModule,

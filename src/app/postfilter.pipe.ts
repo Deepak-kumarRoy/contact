@@ -1,17 +1,16 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'cityfilter'
+  name: 'postfilter'
 })
-export class CityfilterPipe implements PipeTransform {
+export class PostfilterPipe implements PipeTransform {
 
   transform(items: any[], searchText: string): any[] {
-    
     if(!searchText)
     return []
-
+    
     return items.filter(function(search){
-      return search.location.toLowerCase().indexOf(searchText.toLowerCase())>-1;
+      return search.post.toLowerCase().indexOf(searchText.toLowerCase())>-1;
     });
     
   }

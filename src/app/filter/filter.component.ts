@@ -9,7 +9,7 @@ import { UsersService } from '../users.service';
 export class FilterComponent implements OnInit {
 list:any;
 search:any;
-post:any;
+searchpost:any;
   constructor( private user: UsersService) { }
 
   ngOnInit(): void {
@@ -17,14 +17,6 @@ post:any;
       this.list=res;
     })
 
-    for(var i=0; i<this.list.length; i++){
-      if(this.list[i].post==='ceo'){
-        this.post.push(this.list[i])
-        
-      }
-    }
-    console.log(this.post)
-    
   }
 
   
